@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller 1</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <script type="module" src="./scripts/course.js" ></script>
+    <script type="module" src="./scripts/dataCourses.js" ></script>
+    <script type="module" src="./scripts/student.js" ></script>
+    <script type="module" src="./scripts/dataStudens.js" ></script>
+    <script type="module" src="./scripts/main.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>Juan Jose Cordoba Vela</h1>
+                <img class="img-fluid max-width: 100% height: auto" src="./AVATAR_YO.png" alt="Avatar">`
+                <div class="card" style="width: 25rem;">
+                    <h2 class="card-title">Datos Personales</h2>
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody id="infostudent">
+                        </tbody>
+                    </table>
+            </div>
+            </div>
+            <div class="col">
+                <form style="margin:10px;">
+                    <div class="form-row">
+                    <div class="col">
+                        <input type="text" class="form-control" id="search-box" placeholder="Filtrar por nombre">
+                    </div>
+                    <div class="col">
+                        <button type="button" id="button-filterByName" class="btn btn-success">Aplicar</button>
+                    </div>
+                    </div>
+                </form>
+                <div class="card" style="width: 25rem;">
+                    <h2 class="card-title">Cursos Actuales</h2>
+                        <table class="table table-striped">
+                            <thead class="thead-dark">
+                               <tr>
+                                  <th>Curso</th>
+                                  <th>Profesor</th>
+                                  <th>Créditos</th>
+                               </tr>
+                            </thead>
+                            <tbody id="courses">
+                            </tbody>
+                            <div class="row">
+                                <tr> 
+                                    <div class="col">
+                                        <th>Total Créditos: </th>
+                                    </div>
+                                    <div class="col">
+                                        <th id="total-credits"></th> 
+                                    </div>
+                                </tr>
+                            </div>
+                        </table>
+                </div>
+                <h2>Filtro por numero de creditos: </h2>
+                <form style="margin:10px;">
+                    <div class="form-row">
+                    <div class="col">
+                        <input type="text" class="lim-inferior" id="lim_inferior" placeholder="Limite inferior">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="lim-superior" id="lim_superior" placeholder="Limite superior">
+                    </div>
+                    <div class="col">
+                        <button type="button" id="button-filterByCredits" class="btn btn-success">Aplicar</button>
+                    </div>
+                    </div>
+                </form>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
